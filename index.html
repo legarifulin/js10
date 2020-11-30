@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nr10</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+
+<body>
+
+    <div class="main">
+        <div class="profile">
+            <div class="image">
+                <img id="changeImg" src="https://placehold.it/300x240" alt="profilepic">
+            </div>
+            <div class="profiles">
+                <p>Sex</p>
+                <form class="radio">
+                    <input type="radio" id="male" name='gender'>
+                    <label id="male1" for="male" class="male">Male</label>
+                    <input type="radio" id="female" name='gender' value='female'>
+                    <label id="female1" for="female" class="female">Female</label>
+                    <input type="radio" id="other" name='gender' value='other'>
+                    <label id="other1" for="other" class="other">Other</label>
+                </form>
+                <form class="checkbox">
+                    <input type="checkbox" name="single" value="single">
+                    <label id="single" for="single" class="single">Single</label>
+                    <input type="checkbox" name="married">
+                    <label id="married" for="married" class="married">Married</label>
+                    <input type="checkbox" name="divorced" value="divorced">
+                    <label id="divorced" for="divorced" class="divorced">Divorced</label>
+                    <input type="checkbox" name="widowed" value="widowed">
+                    <label id="widowed" for="widowed" class="widowed">Widowed</label>
+                </form>
+                <button id="goButton">Change Picture</button>
+                <button id="goButton1">Change Picture</button>
+            </div>
+        </div>
+        <div class="details">
+            <div class="form">
+                <div class="fname">
+                    <label for="name" class="name">First name:</label>
+                    <input type="fname" id="name" name='name' value='Your name..'>
+                </div>
+                <div class="sname">
+                    <label for="lname" class="lname">Last name:</label>
+                    <input type="lname" id="lname" name='lname' value='Your last name..'>
+                </div>
+                <label for="cities" class="cities">Cities:</label>
+                <select id="cities" name="cities">
+                    <option selected value="Vilnius">Vilnius</option>
+                    <option value="Klaipeda">Klaipeda</option>
+                    <option value="Kaunas">Kaunas</option>
+                </select>
+                <label for="about" class="about">About me:</label>
+                <textarea id="about" name="about">About me..</textarea>
+            </div>
+        </div>
+    </div>
+    <script src="js.js"></script>
+</body>
+
+</html>
